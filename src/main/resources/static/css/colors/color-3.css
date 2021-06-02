@@ -1,0 +1,235 @@
+/*
+
+[Theme Color Stylesheet]
+
+Project     : BloggyPress - Responsive Personal Blog HTML5 Template
+Version     : 1.0
+Author      : ThemeLooks
+Author URI  : https://themeforest.net/user/themelooks
+
+*/
+
+/*------------------------------------*\
+    COLOR
+\*------------------------------------*/
+a,
+a:hover,
+a:focus,
+.btn-link:hover,
+.btn-link:focus,
+.btn-link.active,
+.nav li a:hover,
+.nav li.active > a,
+.nav li.active > a:hover,
+.nav li.active > a:focus,
+.nav li.open > a,
+.nav li.open > a:hover,
+.nav li.open > a:focus,
+.btn-default,
+.btn-default.disabled:hover,
+.btn-default.disabled:focus,
+.btn-default.disabled.focus,
+.btn-default[disabled]:hover,
+.btn-default[disabled]:focus,
+.btn-default[disabled].focus,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary:active:hover,
+.btn-primary:active:focus,
+.btn-primary:active.focus,
+.btn-primary.active,
+.btn-primary.active:hover,
+.btn-primary.active:focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary,
+.open > .dropdown-toggle.btn-primary:hover,
+.open > .dropdown-toggle.btn-primary:focus,
+.open > .dropdown-toggle.btn-primary.focus,
+.nav > li > a.btn-primary:hover,
+.nav > li > a.btn-primary:focus,
+.nav > li.active > a.btn-primary,
+.text-primary,
+.category--item:hover span,
+.social--widget .nav > li > a,
+.post--social > li > a,
+.footer--topbar .social .nav > li > a {
+    color: #ff5252;
+}
+
+/*------------------------------------*\
+    BACKGROUND COLOR
+\*------------------------------------*/
+blockquote:before,
+blockquote:after,
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default:active:hover,
+.btn-default:active:focus,
+.btn-default:active.focus,
+.btn-default.active,
+.btn-default.active:hover,
+.btn-default.active:focus,
+.btn-default.active.focus,
+.open > .dropdown-toggle.btn-default,
+.open > .dropdown-toggle.btn-default:hover,
+.open > .dropdown-toggle.btn-default:focus,
+.open > .dropdown-toggle.btn-default.focus,
+.nav > li > a.btn-default:hover,
+.nav > li > a.btn-default:focus,
+.nav > li.active > a.btn-default,
+.btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary.disabled:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled]:hover,
+.btn-primary[disabled]:focus,
+.btn-primary[disabled].focus,
+.btn-white:hover,
+.btn-white:focus,
+.btn-white.focus,
+.btn-white:active,
+.btn-white:active:hover,
+.btn-white:active:focus,
+.btn-white:active.focus,
+.btn-white.active,
+.btn-white.active:hover,
+.btn-white.active:focus,
+.btn-white.active.focus,
+.open > .dropdown-toggle.btn-white,
+.open > .dropdown-toggle.btn-white:hover,
+.open > .dropdown-toggle.btn-white:focus,
+.open > .dropdown-toggle.btn-white.focus,
+.nav > li > a.btn-white:hover,
+.nav > li > a.btn-white:focus,
+.nav > li.active > a.btn-white,
+.bg-primary,
+[data-overlay-color="primary"]:before,
+.owl-dot.active,
+.owl-nav > div:before,
+.category--item span:before,
+.social--widget .nav > li > a:hover,
+.flicker--widget a:before,
+.links--widget .nav > li > a .count:before,
+.header--search-bar:before,
+.header--navbar .navbar-toggle,
+.post--tags > li > a,
+.post--tags > li > a:hover,
+.post--tags > li > a:focus,
+.post--social > li > a:hover,
+.post--social > li > a:focus,
+.instagram--profile a:hover,
+.footer--topbar .social .nav > li > a:hover {
+    background-color: #ff5252;
+}
+
+::-moz-selection {
+    background-color: #ff5252;
+}
+
+::selection {
+    background-color: #ff5252;
+}
+
+/*------------------------------------*\
+    BORDER COLOR
+\*------------------------------------*/
+.btn-default,
+.btn-default.disabled:hover,
+.btn-default.disabled:focus,
+.btn-default.disabled.focus,
+.btn-default[disabled]:hover,
+.btn-default[disabled]:focus,
+.btn-default[disabled].focus,
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default:active:hover,
+.btn-default:active:focus,
+.btn-default:active.focus,
+.btn-default.active,
+.btn-default.active:hover,
+.btn-default.active:focus,
+.btn-default.active.focus,
+.open > .dropdown-toggle.btn-default,
+.open > .dropdown-toggle.btn-default:hover,
+.open > .dropdown-toggle.btn-default:focus,
+.open > .dropdown-toggle.btn-default.focus,
+.nav > li > a.btn-default:hover,
+.nav > li > a.btn-default:focus,
+.nav > li.active > a.btn-default,
+.btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary.disabled:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled]:hover,
+.btn-primary[disabled]:focus,
+.btn-primary[disabled].focus,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary:active:hover,
+.btn-primary:active:focus,
+.btn-primary:active.focus,
+.btn-primary.active,
+.btn-primary.active:hover,
+.btn-primary.active:focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary,
+.open > .dropdown-toggle.btn-primary:hover,
+.open > .dropdown-toggle.btn-primary:focus,
+.open > .dropdown-toggle.btn-primary.focus,
+.nav > li > a.btn-primary:hover,
+.nav > li > a.btn-primary:focus,
+.nav > li.active > a.btn-primary,
+.btn-white,
+.btn-white.disabled:hover,
+.btn-white.disabled:focus,
+.btn-white.disabled.focus,
+.btn-white[disabled]:hover,
+.btn-white[disabled]:focus,
+.btn-white[disabled].focus,
+.btn-white:hover,
+.btn-white:focus,
+.btn-white.focus,
+.btn-white:active,
+.btn-white:active:hover,
+.btn-white:active:focus,
+.btn-white:active.focus,
+.btn-white.active,
+.btn-white.active:hover,
+.btn-white.active:focus,
+.btn-white.active.focus,
+.open > .dropdown-toggle.btn-white,
+.open > .dropdown-toggle.btn-white:hover,
+.open > .dropdown-toggle.btn-white:focus,
+.open > .dropdown-toggle.btn-white.focus,
+.nav > li > a.btn-white:hover,
+.nav > li > a.btn-white:focus,
+.nav > li.active > a.btn-white,
+.form-control:focus,
+.owl-nav > div:hover,
+.post--item,
+.comment--header .reply:before,
+.social--widget .nav > li > a,
+.header--navbar,
+.post--social > li > a,
+.footer--topbar .social .nav > li > a {
+    border-color: #ff5252;
+}
+
+.footer--copyright:before {
+    border-top-color: #ff5252;
+}
+
+.comment--respond-title,
+.widget--title,
+.related--posts-title,
+.post--comments-title {
+    border-bottom-color: #ff5252;
+}
