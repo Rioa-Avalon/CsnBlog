@@ -63,7 +63,7 @@ public class BlogServiceImpl implements BlogService{
     public Blog updateBlog(Long id, Blog blog) {
         Blog b = blogRepository.findOne(id);
         if(b == null) {
-         throw new NotFoundException("改博客不存在");
+         throw new NotFoundException("该博客不存在");
         }
         BeanUtils.copyProperties(blog,b);
         return blogRepository.save(b);
