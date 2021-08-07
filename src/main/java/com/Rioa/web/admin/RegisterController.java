@@ -5,10 +5,12 @@ import com.Rioa.po.User;
 import com.Rioa.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.util.DigestUtils;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
+import java.nio.charset.StandardCharsets;
 
 @Controller
 public class RegisterController {
@@ -32,8 +34,9 @@ public class RegisterController {
                 //add
                 User user = new User();
                 user.setUsername(username);
-                user.setPassword(password);
+                user.setPassword(DigestUtils.md5DigestAsHex(password.getBytes(StandardCharsets.UTF_8)));
                 userRepository.save(user);
+                attributes.addFlashAttribute("message", "User create succeed");
                 return "redirect:/admin/login";
             }
         }
