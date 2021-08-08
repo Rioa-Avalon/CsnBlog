@@ -47,7 +47,9 @@
           <div class="ui mini negative message" th:unless="${#strings.isEmpty(message)}" th:text="${message}">用户名和密码错误</div>
 
         </form>
-
+        <form class="ui large form" method="post" action="#" th:action="@{/register}">
+          <button class="ui fluid large teal submit button">注   册</button>
+        </form>
       </div>
     </div>
   </div>
