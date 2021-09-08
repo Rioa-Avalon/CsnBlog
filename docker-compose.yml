@@ -1,0 +1,29 @@
+version: "3"
+services:
+  csdserver:
+    container_name: csdserver_1
+    build: .
+    image: csdserver
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mysqldb
+    links:
+      - "mysqldb:mysqldb"
+    environment:
+      - TZ=Asia/Shanghai
+
+
+  mysqldb:
+    container_name: csdserver_mysqldb_1
+    image: mysql:5.7
+    ports:
+      - "3306:3306"
+    command: [
+        '--character-set-server=utf8mb4',
+        '--collation-server=utf8mb4_unicode_ci',
+        '--default-time-zone=+8:00'
+    ]
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=bootdb
