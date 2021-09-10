@@ -28,7 +28,7 @@ public class BlogServiceImpl implements BlogService{
     @Transactional
     @Override
     public Blog getBlog(Long id) {
-        return blogRepository.findOne(id);
+        return blogRepository.getById(id);
     }
 
     @Transactional
@@ -61,7 +61,7 @@ public class BlogServiceImpl implements BlogService{
     @Transactional
     @Override
     public Blog updateBlog(Long id, Blog blog) {
-        Blog b = blogRepository.findOne(id);
+        Blog b = blogRepository.getById(id);
         if(b == null) {
          throw new NotFoundException("该博客不存在");
         }
@@ -72,6 +72,6 @@ public class BlogServiceImpl implements BlogService{
     @Transactional
     @Override
     public void deleteBlog(Long id) {
-        blogRepository.delete(id);
+        blogRepository.deleteById(id);
     }
 }
