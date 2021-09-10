@@ -16,11 +16,11 @@ public class signUpController {
     @Autowired
     private SignupUserRepository signupUserRepository;
     @RequestMapping(value = "/adduser", method = RequestMethod.POST)
-    public SignupUser addUser(@RequestParam(value = "studentId",required = false) String studentId,
-                              @RequestParam(value = "studentName",required = false) String studentName,
+    public SignupUser addUser(@RequestParam(value = "studentId",required = true) String studentId,
+                              @RequestParam(value = "studentName",required = true) String studentName,
                               @RequestParam(value = "hadLearn",defaultValue = "false",required = false) boolean hadLearn,
                               @RequestParam(value = "selfInfo",required = false) String selfIntro,
-                              @RequestParam(value = "whyJoin",required = false) String whyJoin){
+                              @RequestParam(value = "whyJoin",required = true) String whyJoin){
         SignupUser user = new SignupUser();
         user.setStudentId(studentId);
         user.setStudentName(studentName);
