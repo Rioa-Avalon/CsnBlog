@@ -1,10 +1,9 @@
-# CsnBlog
+# CsnServer  API
 
-​	软件部博客平台
+​	软件部后端开发API
 
-git change  test  1
+Access https://rioa.yuuza.net/swagger-ui.html to know the detail API methods documentation
 
-git change  test  2
+@CSD created by Rioa
 
-git change test    3
 
