@@ -4,20 +4,23 @@ import com.Rioa.NotFoundException;
 import com.Rioa.dao.SignupUserRepository;
 import com.Rioa.po.SignupUser;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
-
+@Service
 public class SignupUserServiceImpl implements SignupUserService {
     @Autowired
     private SignupUserRepository signupUserRepository;
 
-    @Transactional
+    @Override
+    public SignupUser findUser(String studentId, String studentName) {
+        return signupUserRepository.findSignupUsersByStudentIdAndStudentName(studentId,studentName);
+    }
+
     @Override
     public SignupUser saveUser(SignupUser signupUser) {
         return signupUserRepository.save(signupUser);
     }
 
-    @Transactional
     @Override
     public SignupUser updataUser(Long id, SignupUser signupUser) {
         SignupUser user = signupUserRepository.getById(id);
@@ -28,13 +31,11 @@ public class SignupUserServiceImpl implements SignupUserService {
         return signupUserRepository.save(signupUser);
     }
 
-    @Transactional
     @Override
     public SignupUser getUser(Long id) {
         return signupUserRepository.getById(id);
     }
 
-    @Transactional
     @Override
     public void deleteUser(Long id) {
         signupUserRepository.deleteById(id);
