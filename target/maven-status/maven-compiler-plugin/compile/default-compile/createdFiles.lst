@@ -16,9 +16,11 @@ com\Rioa\service\BlogServiceImpl.class
 com\Rioa\web\textController.class
 com\Rioa\service\BlogService.class
 com\Rioa\web\signUpController.class
+com\Rioa\dao\SignUser2Repository.class
 com\Rioa\service\SignupUserServiceImpl.class
 com\Rioa\web\admin\RegisterController.class
 com\Rioa\handler\ControllerExceptionHandler.class
+com\Rioa\po\SignUser2.class
 com\Rioa\service\SignupUserService.class
 com\Rioa\dao\TypeRepository.class
 com\Rioa\aspect\LogAspect.class

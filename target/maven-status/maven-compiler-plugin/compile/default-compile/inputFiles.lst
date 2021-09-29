@@ -6,11 +6,13 @@ E:\javacode\csnBlog\src\main\java\com\Rioa\web\IndexController.java
 E:\javacode\csnBlog\src\main\java\com\Rioa\web\admin\LoginController.java
 E:\javacode\csnBlog\src\main\java\com\Rioa\BlogApplication.java
 E:\javacode\csnBlog\src\main\java\com\Rioa\service\TypeService.java
+E:\javacode\csnBlog\src\main\java\com\Rioa\po\SignUser2.java
 E:\javacode\csnBlog\src\main\java\com\Rioa\service\SignupUserService.java
 E:\javacode\csnBlog\src\main\java\com\Rioa\service\SignupUserServiceImpl.java
 E:\javacode\csnBlog\src\main\java\com\Rioa\service\UserService.java
 E:\javacode\csnBlog\src\main\java\com\Rioa\po\User.java
 E:\javacode\csnBlog\src\main\java\com\Rioa\config\Swagger2config.java
+E:\javacode\csnBlog\src\main\java\com\Rioa\dao\SignUser2Repository.java
 E:\javacode\csnBlog\src\main\java\com\Rioa\po\Type.java
 E:\javacode\csnBlog\src\main\java\com\Rioa\aspect\LogAspect.java
 E:\javacode\csnBlog\src\main\java\com\Rioa\web\admin\TypeController.java

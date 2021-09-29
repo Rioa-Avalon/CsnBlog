@@ -1,13 +1,11 @@
 package com.Rioa.web;
 
-import com.Rioa.dao.SignupUserRepository;
+import com.Rioa.po.SignUser2;
 import com.Rioa.po.SignupUser;
 import com.Rioa.service.SignupUserService;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import javax.servlet.http.HttpServletRequest;
 
 @RestController
 @Api(description = "")
@@ -42,6 +40,26 @@ public class signUpController {
         user.setWhyJoin(whyJoin);
 //        if (user.getStudentId() == signupUserService.)
         return signupUserService.saveUser(user);
+    }
+
+    @RequestMapping(value = "/adduser/g2", method = RequestMethod.POST)
+    public SignUser2 addUser(@RequestParam(value = "studentId",required = true) String studentId,
+                               @RequestParam(value = "studentName",required = true) String studentName,
+                               @RequestParam(value = "direction",required = true) String direction,
+                               @RequestParam(value = "selfIntro",required = true) String selfIntro,
+                               @RequestParam(value = "whyJoin",required = true) String whyJoin,
+                               @RequestParam(value = "email",required = true) String email,
+                               @RequestParam(value = "qq",required = true) String qq){
+        SignUser2 user = new SignUser2();
+        user.setStudentId(studentId);
+        user.setStudentName(studentName);
+
+        user.setEmail(email);
+        user.setQq(qq);
+        user.setDirection(direction);
+        user.setSelfIntro(selfIntro);
+        user.setWhyJoin(whyJoin);
+        return signupUserService.saveUser2(user);
     }
 
 }
